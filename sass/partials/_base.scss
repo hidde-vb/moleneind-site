@@ -1,0 +1,26 @@
+// Main SCSS file
+
+// Colors
+$black: #000; 
+$text-weak-color: #b8b4ba;
+$white: #fff;
+
+// Layout
+$showbox-height: 510px;
+$showbox-height-r: 450px;
+$showbox-border: 60px;
+
+$break-small: 850px;
+
+@mixin showbox-el() {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: $white;
+}
+
+* {
+    box-sizing: border-box;   
+}

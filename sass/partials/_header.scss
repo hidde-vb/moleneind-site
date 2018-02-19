@@ -1,0 +1,51 @@
+// Fixed top header
+
+header {
+    z-index: 10;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1366px;
+    background-color: $black;
+}
+
+nav {
+    float: right;
+    margin-right: 20px;
+    
+    ul.menu {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li.menu-item {
+        float: left;
+        transition: .1s;
+        
+        &.active {
+            a {
+                color: $black;
+            }
+            background-color: $white;
+        }
+
+        &:hover {
+            a {
+                color: $black;
+            }
+            background-color: $white;
+        }
+    }
+
+    a {
+        color:white;
+        font-size: 16px;
+        padding: 10px 30px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+

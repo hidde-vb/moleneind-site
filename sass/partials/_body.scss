@@ -1,0 +1,59 @@
+// Main body scss
+
+body {
+    max-width: 1366px;
+    background-color: $white;
+    margin: auto;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    margin-top: 20px;  
+
+    .container-half {
+        display: inline-block;
+        width:50%;
+        height: $showbox-height;
+
+        &#about {
+            padding: 40px;
+        }
+
+        @media screen and (max-width: $break-small) {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .container {
+        display: block;
+        padding: 40px;
+    }
+}
+
+#title {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: $showbox-height;
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+    }
+    
+    .inner {
+        background-color: $black;
+    }
+
+    .under {
+        width: 50vw;
+        bottom: 0;
+        border-bottom: $showbox-border solid $white;
+        border-left: 100vw solid $black; 
+    } 
+}
+
+

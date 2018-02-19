@@ -1,0 +1,4 @@
+# ignored build files
+node_modules/
+css/
+dist/

@@ -1,0 +1,30 @@
+// Event 
+
+#latest-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.event {
+    flex: 1 0 300px;
+    background-size: 100% auto;
+    height: 200px;
+    margin: 10px;
+    background-repeat:no-repeat;
+    transition: .2s;
+    &:hover {
+        filter: invert(100%);
+    }
+}
+
+h3 {
+    width: fit-content;
+    margin: 3px 0;
+    padding: 3px;
+    font-family: 'lato';
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: $black;
+    color: $white;
+}

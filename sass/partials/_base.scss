@@ -10,7 +10,9 @@ $showbox-height: 510px;
 $showbox-height-r: 450px;
 $showbox-border: 60px;
 
-$break-small: 850px;
+$break-lg: 1366px;
+$break-md: 1024px;
+$break-sm: 768px;
 
 @mixin showbox-el() {
     position: absolute;

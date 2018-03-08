@@ -8,6 +8,11 @@ header {
     width: 100%;
     max-width: 1366px;
     background-color: $black;
+
+    .icon img {
+        height: 32px;
+        margin: 10px 0 0 5px;
+    }
 }
 
 nav {

@@ -5,7 +5,7 @@ body {
     background-color: $white;
     margin: auto;
     padding: 0;
-    border: black solid 10px;
+    //border: black solid 10px;
 
     @media screen and (max-width: $break-sm) {
         border: 0px;
@@ -45,8 +45,10 @@ body {
     
     img {
         display: block;
+        padding: 50px 0 50px 0;
         margin: 0 auto;
-        width: 400px;
+        width: 80%;
+        max-width: 758px;
     }
     
     .inner {

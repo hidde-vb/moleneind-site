@@ -23,10 +23,11 @@ h2 {
 }
 
 p {
-    line-height: 28px;
+    line-height: 24px;
     font-size: 20px;
 
-    @media screen and (min-width: $break-md){
-        font-size: 24px;
+    @media screen and (min-width: 1200px){
+        line-height: 28px;
+        font-size: 20px;
     }
 }

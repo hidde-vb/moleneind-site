@@ -18,6 +18,6 @@
         height: 90%;
         position: absolute;
         left: -15px;
-        background: $text-weak-color;
+        background: linear-gradient(to right, $accent , $accent-dark);
     }
 }

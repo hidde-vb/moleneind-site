@@ -6,6 +6,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 10px 0;
     max-width: $break-lg;
     background-color: $black;
 
@@ -24,6 +25,17 @@ header {
 nav {
     float: right;
     margin-right: 20px;
+
+    a {
+        display: block;
+        padding: 10px 30px;
+        text-align: center;
+        font-size: 20px;
+        color:white;
+        text-decoration: none;
+
+        transition-duration: .2s;
+    }
     
     ul.menu {
         list-style-type: none;
@@ -33,30 +45,11 @@ nav {
 
     li.menu-item {
         float: left;
-        transition: .1s;
         
-        &.active {
-            a {
-                color: $black;
-            }
-            background-color: $white;
-        }
-
-        &:hover {
-            a {
-                color: $black;
-            }
-            background-color: $white;
-        }
-    }
-
-    a {
-        color:white;
-        font-size: 16px;
-        padding: 10px 30px;
-        display: block;
-        text-align: center;
-        text-decoration: none;
+        &:hover a {
+            color: $accent-dark;
+           }
+        
     }
 }
 

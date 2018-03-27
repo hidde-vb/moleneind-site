@@ -1,7 +1,7 @@
 // Main body scss
 
 body {
-    max-width: 1366px;
+    max-width: $break-lg;
     background-color: $white;
     margin: auto;
     padding: 0;
@@ -41,21 +41,20 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: $showbox-height;
     
     img {
         display: block;
         padding: 50px 0 50px 0;
         margin: 0 auto;
-        width: 80%;
-        max-width: 758px;
+        width: 75%;
+        max-width: 1200px;
     }
     
     .inner {
         background-color: $black;
     }
 
-    .under {
+    .tilt-under {
         width: 50vw;
         bottom: 0;
         border-bottom: $showbox-border solid $white;

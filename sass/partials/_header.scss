@@ -6,12 +6,18 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 1366px;
+    max-width: $break-lg;
     background-color: $black;
 
-    .icon img {
+    .header-icon {
         height: 32px;
         margin: 10px 0 0 5px;
+        transition: .3s;
+
+        opacity: 1;
+        &.hide {
+            opacity: 0;
+        }
     }
 }
 

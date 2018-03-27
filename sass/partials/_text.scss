@@ -1,24 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
 body {
-    font-family: 'lato';
+    font-family: 'Work Sans';
     color: $black;
 }
 
 h1 {
-    font-family: 'montserrat';
-    font-size: 48px;
+    font-family: 'Oswald';
+    font-size: 64px;
     color: $black;
-    margin-left: -5px;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-family: 'montserrat';
-    font-size: 32px;
+    font-family: 'Oswald';
+    font-size: 54px;
     color: $black;
+    margin-top: 0;
+    text-transform: uppercase;
 }
 
 p {
-    font-size: 18px;
+    line-height: 28px;
+    font-size: 20px;
+
+    @media screen and (min-width: $break-md){
+        font-size: 24px;
+    }
 }

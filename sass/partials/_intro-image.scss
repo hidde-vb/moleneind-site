@@ -1,0 +1,23 @@
+.intro-image {
+    img {
+        max-width:90%;
+        position: relative; 
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    span {
+        display: block;
+        position: relative;
+    }
+
+    span::before {
+        content: ' ';
+        display: block;
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        left: -15px;
+        background: $text-weak-color;
+    }
+}

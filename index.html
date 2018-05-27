@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sass template</title>
+    <title>VIO</title>
 
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -16,7 +17,12 @@
         <a href="#top">
             <img id="header-icon" class="header-icon hide" src="img/logo.png" height="32" alt="LOGO">
         </a>
-        <nav>
+        <div id="hamburger" class="hamburger">
+            <div class="hamburger-line line-1"></div>
+            <div class="hamburger-line line-2"></div>
+            <div class="hamburger-line line-3"></div>
+        </div>
+        <nav id="navigation"> 
             <ul class="menu">
                 <li class="menu-item">
                     <a href="#top">Home</a>
@@ -43,7 +49,7 @@
 
         <section class="wrapper">
             <div class="container" style="padding-bottom: 0">
-                <h1>VIO PROJECT</h1>
+                <a class="underline"><h1>VIO PROJECT</h1></a>
             </div>
             <div class="container-half">
                 <div class="container-half-item">
@@ -66,8 +72,8 @@
             </div>
         </section>
 
-        <section id="events"class="wrapper">
-            <div class="container">
+        <section class="wrapper">
+            <div class="container" style="display: none">
                 <h2>Recente evenementen</h2>
                 <div id="latest-projects">
                     <div style="background-image:url(img/events/cinema2017.jpg)" class="event">
@@ -94,13 +100,116 @@
             </div>
         </section>
 
-        <section id="contact" class="wrapper">
+        <section id="events" class="wrapper">
+            <div class="container">
+                <h2>Recente evenementen</h2>
+                <div class="timeline">
+                    <div class="timeline-item" date-is='03-08-2017'>
+                        <div class="timeline-text">
+                            <h3>Cinema op de heide #1</h3>
+                            <p>
+                                Om de hitte tijdens de laatste uren van de zwoele Kalmthoutse zomer wat dragelijker te maken toverde het jongerencollectief VIO de weide op het einde van de Korte Heuvelstraat in het weekend van 3 tot 5 augustus om tot een gezellige openluchtbioscoop.
+                            </p>
+                            <p>
+                                In samenwerking met <a href="https://www.scoutsheuvel.be/">scouts en gidsen Heuvel</a>.
+                            </p>
+                        </div>
+                        <div class="timeline-image">
+                            <span><img class="intro-image" src="img/events/cinema2017.jpg"/></span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" date-is='01-07-2017'>
+                        <div class="timeline-text">
+                            <h3>pullenbal 2017</h3>
+                            <p>
+                                Om de hitte tijdens de laatste uren van de zwoele Kalmthoutse zomer wat dragelijker te maken toverde het jongerencollectief VIO de weide op het einde van de Korte Heuvelstraat in het weekend van 3 tot 5 augustus om tot een gezellige openluchtbioscoop.
+                            </p>
+                            <p>
+                                In samenwerking met <a href="https://www.scoutsheuvel.be/">scouts en gidsen Heuvel</a>.
+                            </p>
+                        </div>
+                        <div class="timeline-image">
+                            <span><img class="intro-image" src="img/events/pullenbal2017.jpg"/></span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" date-is='11-03-2017'>
+                        <div class="timeline-text">
+                            <h3>Automuseum brussel</h3>
+                            <p>
+                                Om de hitte tijdens de laatste uren van de zwoele Kalmthoutse zomer wat dragelijker te maken toverde het jongerencollectief VIO de weide op het einde van de Korte Heuvelstraat in het weekend van 3 tot 5 augustus om tot een gezellige openluchtbioscoop.
+                            </p>
+                            <p>
+                                In samenwerking met <a href="https://www.scoutsheuvel.be/">scouts en gidsen Heuvel</a>.
+                            </p>
+                        </div>
+                        <div class="timeline-image">
+                            <span><img class="intro-image" src="img/events/automuseum2017.jpg"/></span>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+        </section>
 
+        <section class="banner">
+            <img class="banner-image" src="img/banner.jpg">
+        </section>
+
+        <section id="contact" class="wrapper">
+            <div class="container title">
+                <h2>Contact</h2>
+            </div>
+            <div class="container-half">
+                <div class="container-half-item">
+                    <a class="social-link" href="https://www.facebook.com/vioproject/">
+                        <div class="social social-facebook">
+                            <span class="fa fa-facebook"></span>
+                            <span>@vioproject</span>
+                        </div>
+                    </a>
+                    <a class="social-link" href="https://www.instagram.com/vio2920">
+                        <div class="social social-instagram">
+                            <span class="fa fa-instagram"></span>
+                            <span>vio2920</span>
+                        </div>
+                    </a>
+                    <a class="social-link" href="mailto:Project@govio.be">
+                        <div class="social social-mail">
+                            <span class="fa fa-envelope"></span>
+                            <span>Project@govio.be</span>
+                        </div>
+                    </a>
+                    <a class="social-link" href="https://www.google.be/maps/place/Jeugdhuis+Govio/@51.393969,4.4729777,18z">
+                        <div class="social social-maps">
+                            <span class="fa fa-map"></span>
+                            <span>Dorpsstraat 1, 2920 Kalmthout</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="container-half-item" style="padding-top: 20px">
+                    <p>
+                        Geïnteresseerd? Via de volgende kanalen zijn wij bereikbaar 
+                        voor al uw vragen.
+                    </p>
+                    <p>
+                        Ook niet vies van fotografie, filmbewerking, VJ’en of decors bouwen? 
+                        We zijn steeds op zoek naar nieuwe creatievelingen. Goesting om de handen 
+                        uit de mouwen te steken en zelf te ondernemen is een vereiste, voorkennis niet.
+                    </p>
+                </div>
+            </div>
+        </div>
         </section>
     </main>
 
     <footer>
-
+        <div class="tilt-above"></div>
+        <div class="inner bottom">
+                <p class="light">
+                    © 2018 Vio Project |  <a href="http://hidde.cc">Hidde van Bavel</a>
+                </p>
+            </div>
+        </div>
     </footer>
 
     <script src="dist/js/main.js"></script>

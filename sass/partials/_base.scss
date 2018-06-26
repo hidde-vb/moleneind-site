@@ -21,6 +21,8 @@ $break-md: 1024px;
 $break-sm: 942px;
 $break-xs: 672px;
 
+$break-mobile: 500px;
+
 @mixin showbox-el() {
     position: absolute;
     width: 0;

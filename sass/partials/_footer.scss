@@ -1,7 +1,23 @@
 // Footer declarations
 
 footer {
-    height: 200px;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
     color: $white;
     background-color: $black;
+
+    .inner {
+        height: 250px;
+    }
+
+
+    .bottom {
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+    }
 }

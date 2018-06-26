@@ -1,0 +1,66 @@
+.timeline-item {
+    display: flex;
+    position: relative;
+    padding: 4em 2em 2em;
+    border-left: 3px solid $black;
+    font-size: 20px;
+    display: flex;
+    
+
+    .timeline-text {
+        flex: 1;
+        padding: 0 20px;
+        
+        @media screen and (max-width: $break-sm) {
+            min-width: 420px;
+        }
+    }
+
+    &:nth-child(2) .timeline-text {
+        order:2;
+    }
+    
+    .timeline-image {
+        flex: 1;
+        padding: 10px;
+        position: relative;
+        img {
+            max-width:90%;
+        }     
+    } 
+	
+	&::before {
+		content: attr(date-is);
+		position: absolute;
+		left: 2em;
+		top: 1.7em;
+        display: block;
+        font-weight: 700;
+        font-size: 22px;
+        color: $accent;
+	}
+
+	&::after {
+		width: 10px;
+		height: 10px;
+		display: block;
+		top: 2em;
+		position: absolute;
+		left: -7px;
+		content: '';
+		border: 3px solid $black;
+		background: white;
+    }
+    
+    @media screen and (max-width: $break-sm) {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.timeline {
+    margin: auto;
+    max-width: 1366px;
+    border-top: 3px solid $black;
+}

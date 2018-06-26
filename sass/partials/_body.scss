@@ -1,12 +1,10 @@
 // Main body scss
-
 body {
     max-width: $break-lg;
     background-color: $white;
     margin: auto;
     padding: 0;
     border: black solid 10px;
-
     @media screen and (max-width: $break-sm) {
         border: 0px;
     }
@@ -14,27 +12,25 @@ body {
 
 .wrapper {
     width: 100%;
-    margin-top: 20px;  
+    margin-top: 20px;
     .container-half {
         display: flex;
-
         .container-half-item {
             padding: 40px;
             flex: 1;
-
-            
         }
-        
         @media screen and (max-width: $break-sm) {
             display: block;
             width: 100%;
             height: auto;
         }
     }
-
     .container {
         display: block;
         padding: 40px;
+        &.title {
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -62,5 +58,12 @@ body {
         border-left: 100vw solid $black; 
     } 
 }
+.tilt-under {
+    border-bottom: $showbox-border solid $white;
+    border-left: 100vw solid $black;
+}
 
-
+.tilt-above {
+    border-top: $showbox-border solid $white;
+    border-right: 100vw solid $black;
+}

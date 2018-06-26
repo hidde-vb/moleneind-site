@@ -1,0 +1,46 @@
+.social {
+    padding: 15px;
+    margin: 10px;
+    font-size: 18px;
+    width: 400px;
+    text-decoration: none;
+    text-align: right;
+    color: white;
+    background: $black;
+    &:hover {
+        opacity: 0.7;
+    }
+
+    .fa {
+        color: white;
+        float: left;
+    }
+
+    @media screen and (max-width: $break-sm) {
+        display: block;
+        width: 95%;
+    }
+}
+
+.social-link {
+    text-decoration: none;
+}
+
+.social-facebook {
+    background: $facebook;
+    @media screen and (min-width: $break-sm) {
+        margin-bottom: 0;
+        display: inline-block;
+        max-width: 190px;
+    }
+}
+
+.social-instagram {
+    background: $instagram;
+    @media screen and (min-width: $break-sm) {
+        margin-left: 4px;
+        margin-bottom: 0;
+        display: inline-block;
+        max-width: 190px;
+    }
+}

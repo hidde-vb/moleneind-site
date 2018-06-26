@@ -4,7 +4,12 @@
 $black: #000; 
 $accent: #F761A1;
 $accent-dark: #8C1BAB;
+$light: #bbb;
 $white: #fff;
+
+// Social Colors
+$facebook: #3B5998;
+$instagram: #e4405f;
 
 // Layout
 $showbox-height: 510px;
@@ -13,7 +18,8 @@ $showbox-border: 60px;
 
 $break-lg: 1920px;
 $break-md: 1024px;
-$break-sm: 920px;
+$break-sm: 942px;
+$break-xs: 672px;
 
 @mixin showbox-el() {
     position: absolute;

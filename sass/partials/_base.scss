@@ -1,37 +1,26 @@
 // Main SCSS file
 
 // Colors
-$black: #000; 
-$accent: #F761A1;
-$accent-dark: #8C1BAB;
-$light: #bbb;
-$white: #fff;
+$dark: #3c4859;
+$primary-dark: #0a6c3a;
+$primary: #329f5b;
+$primary-light: #8fd5a6;
+$secondary: #f2dcd0;
+$light: #f7f2f2;
 
 // Social Colors
 $facebook: #3B5998;
-$instagram: #e4405f;
+$facebook-light: #1778F2;
 
 // Layout
-$showbox-height: 510px;
-$showbox-height-r: 450px;
-$showbox-border: 60px;
-
-$break-lg: 1920px;
-$break-md: 1024px;
-$break-sm: 942px;
-$break-xs: 672px;
-
-$break-mobile: 500px;
-
-@mixin showbox-el() {
-    position: absolute;
-    width: 0;
-    height: 0;
-    bottom: 0;
-    z-index: -1;
-    background-color: $white;
-}
+$break-big: 1200px;
+$break-small: 900px;
+$break-mobile: 600px;
 
 * {
     box-sizing: border-box;   
+}
+
+.hide {
+    opacity: 0;
 }

@@ -1,0 +1,122 @@
+.contact-form {
+  padding: 10px;
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 10px;
+    background: white;
+
+    border-radius: 5px;
+    border: $secondary 2px solid;
+
+    &:focus {
+      border-color: $primary;
+    }
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 10px;
+
+    background: $secondary;
+    border-radius: 5px;
+    border: $secondary 2px solid;
+
+    transition-duration: 0.2s;
+
+    -webkit-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      transform: scale(1.02);
+      -webkit-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: $primary;
+  color: #fff; /* White text color */
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+
+  -webkit-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4);
+}
+
+.hidden {
+  display: none;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 2.5s 4.5s;
+  animation: fadein 0.5s, fadeout 2.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

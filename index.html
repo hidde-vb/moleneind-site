@@ -1,213 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VIO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stal Moleneind vzw</title>
 
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
-    <link rel="stylesheet" href="dist/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="img/symbols/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="img/symbols/favicon-32x32.png" sizes="32x32" />
+  <link rel="stylesheet" href="dist/css/main.css" />
 </head>
 
 <body>
-    <header>
-        <a href="#top">
-            <img id="header-icon" class="header-icon hide" src="img/logo.png" height="32" alt="LOGO">
+  <header>
+    <a href="#top">
+      <img id="header-icon" class="header-icon" src="img/symbols/logo.png" alt="Logo" />
+    </a>
+    <div id="hamburger" class="hamburger">
+      <div class="hamburger-line line-1"></div>
+      <div class="hamburger-line line-2"></div>
+      <div class="hamburger-line line-3"></div>
+    </div>
+    <nav id="navigation">
+      <ul class="menu">
+        <li class="menu-item">
+          <a class="active" href="./index.html">Home</a>
+        </li>
+        <li class="menu-item">
+          <a href="./pages/pension.html">Paardenpension</a>
+        </li>
+        <li class="menu-item">
+          <a href="./pages/zorgboerderij.html">Zorgboerderij</a>
+        </li>
+        <li class="menu-item">
+          <a href="./pages/zorgboerderij.html#contact">Contact</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item-symbol" href="https://www.facebook.com/stalmoleneind/">
+            <img src="img/symbols/facebook.png" height="32px" alt="facebook" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="fb-root"></div>
+
+    <script async defer crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=216969248757139&autoLogAppEvents=1"></script>
+    <div class="card jumbotron"></div>
+    <div class="card jumbotron-text">
+      <h1>
+        Stal Moleneind vzw, de paarden- en zorgboerderij voor iedereen die wil genieten van rust en natuur.
+      </h1>
+      <p>
+        Stal Moleneind vzw is een boerderij die reeds vier generatie bestaat
+        binnen dezelfde familie. Heden is het gebouw een paardenpension en
+        zorgboerderij. We zorgen met passie en liefde voor onze dieren. Omdat
+        we deze passie graag delen is iedereen welkom op de zorgboerderij!
+      </p>
+    </div>
+
+    <section class="container">
+      <div class="card box">
+        <h2>Ben jij een echte dierenvriend?</h2>
+        <p>
+          Kom dan zeker eens kennismaken met ons. Wij bieden een rustgevende &
+          ontspannende hobby of dagbesteding in het midden van de omliggende
+          natuur.
+        </p>
+        <p>
+          Wil je graag <a href="#">contact</a> opnemen? Wij staan altijd open
+          voor vragen!
+        </p>
+        <br />
+        <a href="https://www.facebook.com/stalmoleneind/">
+          <div class="facebook">
+            Volg ons ook op
+            <img src="img/symbols/facebook.png" height="32px" alt="facebook" />
+          </div>
         </a>
-        <div id="hamburger" class="hamburger">
-            <div class="hamburger-line line-1"></div>
-            <div class="hamburger-line line-2"></div>
-            <div class="hamburger-line line-3"></div>
+      </div>
+      <div class="box fb-plugin">
+        <div class="fb-page" data-href="https://www.facebook.com/stalmoleneind/" data-tabs="timeline" data-width="400"
+          data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true"
+          data-show-facepile="false">
+          <blockquote cite="https://www.facebook.com/stalmoleneind/" class="fb-xfbml-parse-ignore">
+            <a class="facebook-link" href="https://www.facebook.com/stalmoleneind/">
+              Stal Moleneind vzw - Paardenpension &amp; zorgboerderij
+            </a>
+          </blockquote>
         </div>
-        <nav id="navigation">
-            <ul class="menu">
-                <li class="menu-item">
-                    <a href="#top">Home</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#events">projecten</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <section class="wrapper">
-            <div id="title">
-                <div class="inner">
-                    <img src="img/logo-mask.svg" alt="logo">
-                </div>
-                <div class="tilt-under"></div>
-            </div>
-        </section>
+    <section class="container container--extra-spacing">
 
-        <section class="wrapper">
-            <div class="container" style="padding-bottom: 0">
-                <a class="underline">
-                    <h1>VIO PROJECT</h1>
-                </a>
-            </div>
-            <div class="container-half">
-                <div class="container-half-item">
-                    <p>
-                        VIO is een grafisch jongerencollectief met een passie voor beeld in de breedste zin. Grafische vormgeving, video, fotografie,
-                        projecties, licht-constructies, decoraties... Gevestigd binnen de muren van JH Govio brengen we onze
-                        ideeën en talenten samen in een productiehuis om te werken aan eigen projecten en opdrachten voor
-                        derden.
-                    </p>
-                    <p>
-                        Op zoek naar een logo, affiche-ontwerp, decoratie, VJ’s, website, filmpje, … voor uw organisatie, bedrijf of evenement? Wij
-                        bespreken graag met u de mogelijkheden.
-                    </p>
-                </div>
-                <div class="container-half-item">
-                    <div class="intro-image">
-                        <span>
-                            <img src="img/intro.jpg" alt="intro">
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="panel box">
+        <a class="no-effect" href="./pages/zorgboerderij.html">
+          <h3>Meehelpen op de boerderij</h3>
+          <p>Een voormiddag helpen, op maat van de gasten.</p>
+          <p class="accent">Meer info</p>
+        </a>
+      </div>
+      <div class="panel box panel-uneven">
+        <a class="no-effect" href="./pages/pension.html">
+          <h3>Pensionstal</h3>
+          <p>Ik zoek een plaats voor mijn paard of pony.</p>
+          <p class="accent">Meer info</p>
+        </a>
+      </div>
+      <div class="panel box">
+        <a class="no-effect" href="./pages/zorgboerderij.html">
+          <h3>Boerderij activiteiten</h3>
+          <p>Een namiddag vol toffe boerderijactiviteiten, speciaal voor groepen.</p>
+          <p class="accent">Meer info</p>
+        </a>
+      </div>
+    </section>
 
-        <section id="events" class="wrapper">
-            <div class="container">
-                <h2>Recente evenementen</h2>
-                <div class="timeline">
-                    <div class="timeline-item" date-is='03-08-2017'>
-                        <div class="timeline-text">
-                            <h3>Cinema op de heide #1</h3>
-                            <p>
-                                Om de hitte tijdens de laatste uren van de zwoele Kalmthoutse zomer wat dragelijker te maken toverde het jongerencollectief
-                                VIO de weide op het einde van de Korte Heuvelstraat in het weekend van 3 tot 5 augustus om
-                                tot een gezellige openluchtbioscoop.
-                            </p>
-                            <p>
-                                In samenwerking met
-                                <a href="https://www.scoutsheuvel.be/">scouts en gidsen Heuvel</a>.
-                            </p>
-                        </div>
-                        <div class="timeline-image">
-                            <span>
-                                <img class="intro-image" src="img/events/cinema2017.jpg" />
-                            </span>
-                        </div>
-                    </div>
+    <img class="banner-image" src="./img/foto/banner-main.jpg" alt="Banner" />
+  </main>
 
-                    <div class="timeline-item" date-is='01-07-2017'>
-                        <div class="timeline-text">
-                            <h3>pullenbal 2017</h3>
-                            <p>
-                                Om de hitte tijdens de laatste uren van de zwoele Kalmthoutse zomer wat dragelijker te maken toverde het jongerencollectief
-                                VIO de weide op het einde van de Korte Heuvelstraat in het weekend van 3 tot 5 augustus om
-                                tot een gezellige openluchtbioscoop.
-                            </p>
-                            <p>
-                                In samenwerking met
-                                <a href="https://www.scoutsheuvel.be/">scouts en gidsen Heuvel</a>.
-                            </p>
-                        </div>
-                        <div class="timeline-image">
-                            <span>
-                                <img class="intro-image" src="img/events/pullenbal2017.jpg" />
-                            </span>
-                        </div>
-                    </div>
-                    <div class="timeline-item" date-is='11-03-2017'>
-                        <div class="timeline-text">
-                            <h3>Automuseum brussel</h3>
-                            <p>
-                                Om de hitte tijdens de laatste uren van de zwoele Kalmthoutse zomer wat dragelijker te maken toverde het jongerencollectief
-                                VIO de weide op het einde van de Korte Heuvelstraat in het weekend van 3 tot 5 augustus om
-                                tot een gezellige openluchtbioscoop.
-                            </p>
-                            <p>
-                                In samenwerking met
-                                <a href="https://www.scoutsheuvel.be/">scouts en gidsen Heuvel</a>.
-                            </p>
-                        </div>
-                        <div class="timeline-image">
-                            <span>
-                                <img class="intro-image" src="img/events/automuseum2017.jpg" />
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <footer>
+    <div class="container bottom">
+      <div class="box info">
+        <img src="img/symbols/logo.png" height="64px" alt="Logo" />
+        <ul class="info-list">
+          <li>Bergsebaan 38</li>
+          <li>2910 Essen Hoek</li>
+          <li>info@stalmoleneind.be</li>
+        </ul>
+        <ul class="info-list">
+          <li class="info-list__label">Paardenpension</li>
+          <li><b>+32</b> 496 69 61 23</li>
+          <li class="info-list__label">Zorgboerderij</li>
+          <li><b>+32</b> 476 55 76 77</li>
+        </ul>
+      </div>
+      <a href="https://www.vaph.be/">
+        <img class="footer-icon" src="./img/footer/vaph-logo.png" alt="vaph logo" />
+      </a>
+      <a href="http://www.groenezorg.be/">
+        <img class="footer-icon" src="./img/footer/zorg-logo.png" alt="groene zorg logo" />
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <p class="light">
+        <a href="pages/privacy-policy.html">Privacy Policy</a>
+        | © 2020 Stal Moleneind vzw |
+        <a href="http://hidde.cc">Hidde van Bavel</a>
+      </p>
+    </div>
+  </footer>
 
-        <section class="banner">
-            <img class="banner-image" src="img/banner.jpg">
-        </section>
-
-        <section id="contact" class="wrapper">
-            <div class="container title">
-                <h2>Contact</h2>
-            </div>
-            <div class="container-half">
-                <div class="container-half-item">
-                    <a class="social-link" href="https://www.facebook.com/vioproject/">
-                        <div class="social social-facebook">
-                            <span class="fa fa-facebook"></span>
-                            <span>@vioproject</span>
-                        </div>
-                    </a>
-                    <a class="social-link" href="https://www.instagram.com/vio2920">
-                        <div class="social social-instagram">
-                            <span class="fa fa-instagram"></span>
-                            <span>vio2920</span>
-                        </div>
-                    </a>
-                    <a class="social-link" href="mailto:Project@govio.be">
-                        <div class="social social-mail">
-                            <span class="fa fa-envelope"></span>
-                            <span>Project@govio.be</span>
-                        </div>
-                    </a>
-                    <a class="social-link" href="https://www.google.be/maps/place/Jeugdhuis+Govio/@51.393969,4.4729777,18z">
-                        <div class="social social-maps">
-                            <span class="fa fa-map"></span>
-                            <span>Dorpsstraat 1, 2920 Kalmthout</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="container-half-item" style="padding-top: 20px">
-                    <p>
-                        Geïnteresseerd? Via de volgende kanalen zijn wij bereikbaar voor al uw vragen.
-                    </p>
-                    <p>
-                        Ook niet vies van fotografie, filmbewerking, VJ’en of decors bouwen? We zijn steeds op zoek naar nieuwe creatievelingen.
-                        Goesting om de handen uit de mouwen te steken en zelf te ondernemen is een vereiste, voorkennis niet.
-                    </p>
-                </div>
-            </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="tilt-above"></div>
-        <div class="inner bottom">
-            <p class="light">
-                Mede mogelijk gemaakt door
-            </p>
-                <img class="footer-logo" src="img/footer/flanders-full.png" alt="logo-flanders">
-                <img class="footer-logo" src="img/footer/govio-full.png" alt="logo-govio" >
-            <p class="light">
-                © 2018 Vio Project |
-                <a href="http://hidde.cc">Hidde van Bavel</a>
-            </p>
-        </div>
-        </div>
-    </footer>
-
-    <script src="dist/js/script.js"></script>
+  <script src="dist/js/script.js"></script>
 </body>
 
 </html>

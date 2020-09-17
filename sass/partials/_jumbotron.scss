@@ -1,0 +1,25 @@
+.jumbotron {
+  margin: 0 20px;
+  padding-top: 44%;
+  min-height: 500px;
+
+  background-image: url("../../img/foto/jumbotron.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron-text {
+  background: $primary-light;
+  color: $dark;
+  border-radius: 5px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+
+  h1 {
+    font-size: 19px;
+    color: $primary-dark;
+  }
+}

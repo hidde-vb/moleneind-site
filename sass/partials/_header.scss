@@ -1,114 +1,123 @@
 // Fixed top header
 
 header {
-    z-index: 10;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 10px 0;
-    max-width: $break-lg;
-    background-color: $black;
+  z-index: 10;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  max-width: $break-big;
 
-    .header-icon {
-        height: 32px;
-        margin: 10px 0 0 5px;
-        transition: .3s;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(247, 242, 242, 1) 80%);
 
-        opacity: 1;
-        &.hide {
-            opacity: 0;
-        }
+  .header-icon {
+    margin: 20px;
+    height: 80px;
+    transition: .2s;
+
+    @media screen and (max-width: $break-mobile) {
+      height: 50px;
     }
-
-    @media screen and (max-width: $break-xs) {
-    }
+  }
 }
 
 nav {
-    float: right;
-    margin-right: 20px;
+  float: right;
+  margin-right: 60px;
 
-    
-    ul.menu {
-        list-style-type: none;
-        margin: 0px;
-        padding: 0px;
+  ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li.menu-item {
+    float: left;
+
+    a {
+      display: block;
+      padding: 20px 30px 0 0;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: $dark;
+      text-decoration: none;
+
+      &.menu-item-symbol {
+        padding: 15px;
+      }
+
+      &.active {
+        color: $primary;
+      }
     }
 
-    li.menu-item {
-        float: left;
-        a {
-            display: block;
-            padding: 10px 30px;
-            text-align: center;
-            font-size: 24px;
-            color:white;
-            text-decoration: none;
-    
-            transition-duration: .2s;
-        }
-        
-        &:hover a {
-            color: $accent-dark;
-           }
-        
+    &:hover a {
+      color: $primary;
     }
-    @media screen and (max-width: $break-xs) {
-        display:none;
-    }
+
+  }
+
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
 }
 
-@media screen and (max-width: $break-xs) {
-    nav.vertical {
-        margin: 0;
-        display: block;
-        align-content: center;
-        width: 100%;
-        
-        background: linear-gradient(to bottom left, $accent-dark, $accent);
-        li.menu-item {
-            float: none;
-            width: 100%;
-            a {
-                padding: 25px 30px;
-                margin-top: 2px;
-                background: $black;
-            }
-        }
+@media screen and (max-width: $break-small) {
+  nav.vertical {
+    margin: 0;
+    display: block;
+    align-content: center;
+    background: $light;
+    width: 100%;
+
+    li.menu-item {
+      float: none;
+      width: 100%;
+
+      a {
+        font-size: 18px;
+        margin-top: 10px;
+      }
     }
+  }
 }
 
 .hamburger {
-    width:45px;
-    float: right;
-    margin-right: 20px; 
-    
-    .hamburger-line {
-        width: 35px;
-        height: 4px;
-        background-color: $white;
-        transition: .2s;
-        margin: 7px 0;
-    } 
-    &.active {
-        .line-1 {
-            width: 44px;
-            transform: rotate(45deg) translate(3px, 12px);
-        }
-        .line-2 {
-            opacity: 0;
-        }
-        .line-3 {
-            width: 45px;
-            transform: rotate(-45deg) translate(3px, -12px);
-        }
-    }
-    &:hover .hamburger-line {
-        background-color: $accent-dark;
+  width: 45px;
+  float: right;
+  margin-right: 20px;
+
+  .hamburger-line {
+    width: 35px;
+    height: 4px;
+    background-color: $dark;
+    transition: .2s;
+    margin: 7px 0;
+  }
+
+  &.active {
+    .line-1 {
+      width: 44px;
+      transform: rotate(45deg) translate(3px, 12px);
     }
 
-    @media screen and (min-width: $break-xs) {
-        display:none;
-    } 
+    .line-2 {
+      opacity: 0;
+    }
+
+    .line-3 {
+      width: 45px;
+      transform: rotate(-45deg) translate(3px, -12px);
+    }
+  }
+
+  &:hover .hamburger-line {
+    background-color: $primary-dark;
+  }
+
+  @media screen and (min-width: $break-small) {
+    display: none;
+  }
 }

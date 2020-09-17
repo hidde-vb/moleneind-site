@@ -1,56 +1,84 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url("https://fonts.googleapis.com/css?family=Alata|Open+Sans&display=swap");
 
 body {
-    font-family: 'Work Sans';
-    color: $black;
+  font-family: "Open Sans", sans-serif;
+  color: $dark;
 }
 
 h1 {
-    font-family: 'Oswald';
-    font-size: 72px;
-    color: $black;
-    margin: 0;
-    text-transform: uppercase;
+  font-family: "Alata", sans-serif;
+  font-size: 42px;
+  color: $dark;
 }
 
 h2 {
-    font-family: 'Oswald';
-    font-size: 54px;
-    color: $black;
-    margin-top: 0;
-    text-transform: uppercase;
+  font-family: "Alata", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: $primary-dark;
 }
 
 h3 {
-    font-family: 'Oswald';
-    font-size: 42px;
-    color: $black;
-    margin-top: 0;
-    text-transform: uppercase;
+  font-family: "Alata", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: $primary-dark;
+
+  margin: 0;
+  padding: 10px;
 }
 
 p {
-    line-height: 24px;
-    font-size: 20px;
+  line-height: 24px;
+  font-size: 16px;
 
-    a {
-        color: $accent-dark;
-        transition: .3s;
-        &:hover {
-            color: $accent;
-        }
-    }
+  margin: 0px;
+  padding: 10px;
 
-    &.light {
-        font-size: 16px;
-        margin: 15px 60px;
-        color: $light;
-        a { color: $light; }
-    }
+  &.accent {
+    padding-top: 20px;
+    color: $primary-dark;
+    font-style: italic;
+  }
+}
 
-    @media screen and (min-width: 1200px){
-        line-height: 28px;
-        font-size: 20px;
-    }
+a {
+  color: $primary-dark;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $primary-light;
+  }
+}
+
+.no-effect {
+  font-family: "Open Sans", sans-serif;
+  color: $dark;
+  font-weight: 500;
+
+  &:hover {
+    color: $dark;
+  }
+}
+
+.facebook {
+  padding: 10px;
+  color: $facebook-light;
+
+  &:hover {
+    color: $facebook;
+    border-color: $facebook;
+  }
+
+  & img {
+    position: relative;
+    top: 10px;
+    left: 5px;
+  }
+}
+
+.facebook-link {
+  display: none;
 }

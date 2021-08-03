@@ -19,6 +19,7 @@ section {
   padding: 20px;
 }
 
+
 .panel {
   transition-duration: 0.2s;
   border: $light 3px solid;
@@ -90,5 +91,32 @@ section {
   &.center-box {
     max-width: 800px;
     margin: 10px auto;
+  }
+}
+
+.center {
+  display: flex;
+  margin: 20px auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.button {
+  border: 3px black solid;
+  padding: 10px;
+  margin: 10px;
+  min-width: 240px;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: $light;
+
+  transition-duration: 0.2s;
+
+  &:hover {
+    transform: scale(1.04);
+    -webkit-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4);
   }
 }

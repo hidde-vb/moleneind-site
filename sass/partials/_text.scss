@@ -41,13 +41,22 @@ p {
   max-width: 800px;
 
   margin: 0px;
-  padding: 10px;
+  padding: 10px 0;
+
+  &.sticky {
+    padding-top: 0;
+  }
 
   &.accent {
     padding-top: 20px;
     color: $primary-dark;
     font-style: italic;
   }
+}
+
+.heavy {
+  font-weight: 600;
+  font-size: 20px;
 }
 
 a {

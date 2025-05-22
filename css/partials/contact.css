@@ -9,13 +9,13 @@
     font-size: 14px;
     margin: 5px 0;
     padding: 10px;
-    background: white;
+    background: var(--c-white);
 
     border-radius: 5px;
-    border: $secondary 2px solid;
+    border: var(--c-secondary) 2px solid;
 
     &:focus {
-      border-color: $primary;
+      border-color: var(--c-primary);
     }
   }
 
@@ -25,9 +25,9 @@
     margin: 10px 0;
     padding: 10px;
 
-    background: $secondary;
+    background: var(--c-secondary);
     border-radius: 5px;
-    border: $secondary 2px solid;
+    border: var(--c-secondary) 2px solid;
 
     transition-duration: 0.2s;
 
@@ -52,8 +52,8 @@ textarea {
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
-  background-color: $primary;
-  color: #fff; /* White text color */
+  background-color: var(--c-primary);
+  color: var(--c-white);
   text-align: center;
   border-radius: 5px;
   padding: 16px;

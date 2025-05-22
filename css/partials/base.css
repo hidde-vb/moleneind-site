@@ -1,0 +1,24 @@
+:root {
+  --c-dark: #3c4859;
+  --c-primary-dark: #0a6c3a;
+  --c-primary: #329f5b;
+  --c-primary-light: #8fd5a6;
+  --c-secondary: #f2dcd0;
+  --c-light: #f7f2f2;
+  --c-white: #ffffff;
+
+  --c-facebook: #3b5998;
+  --c-facebook-light: #1778f2;
+
+  --break-big: 1200px;
+  --break-small: 1050px;
+  --break-mobile: 600px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hide {
+  opacity: 0;
+}

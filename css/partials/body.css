@@ -1,7 +1,6 @@
-// Main body scss
 body {
-  max-width: $break-big;
-  background-color: $light;
+  max-width: var(--break-big);
+  background-color: var(--c-light);
   margin: auto;
   padding: 0;
 }
@@ -19,26 +18,22 @@ section {
   padding: 20px;
 }
 
-
 .panel {
   transition-duration: 0.2s;
-  border: $light 3px solid;
+  border: var(--c-light) 3px solid;
   border-radius: 5px;
 
   background-color: white;
 
   &:hover {
     transform: scale(1.02);
-    border: $primary 3px solid;
+    border: var(--c-primary) 3px solid;
   }
 
   &.panel-uneven {
-    background-color: $secondary;
+    background-color: var(--c-secondary);
   }
 }
-
-// Images
-
 .large-image {
   border-radius: 5px;
   max-width: 100%;
@@ -46,7 +41,7 @@ section {
 }
 
 .banner-image {
-  border-top: $primary solid 3px;
+  border-top: var(--c-primary) solid 3px;
   width: 100%;
 
   &-rounded {
@@ -68,11 +63,11 @@ section {
     padding-top: 20px;
   }
 
-  &--extra-spacing {
+  & container--extra-spacing {
     margin: 100px 0;
   }
 
-  &--initial {
+  & container--initial {
     margin-top: 150px;
   }
 }
@@ -102,6 +97,7 @@ section {
   text-align: center;
 }
 
+/* TODO cleanup */
 .sleep-button {
   border: 3px black solid;
   padding: 10px;
@@ -109,7 +105,7 @@ section {
   min-width: 240px;
   font-weight: 600;
   font-size: 20px;
-  background-color: $light;
+  background-color: var(--c-light);
 
   transition-duration: 0.2s;
 

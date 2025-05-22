@@ -7,6 +7,9 @@ Depends only on `PostCSS` to tranform future-standards-compliant CSS into stylin
 ### TODO
  - [ ] Update images
  - [ ] Update text
- - [ ] modernize css toolchain with plain, future-standards-compliant CSS
+ - [x] modernize css toolchain with plain, future-standards-compliant CSS
     - postcss with a basic script https://github.com/postcss/postcss?tab=readme-ov-file#npm-scripts
- - [ ] get rid of gulp
+ - [x] get rid of gulp 
+ - [x] move js out of dist and ignore dist completely
+ - [ ] fix media queries
+ - [ ] modernize css

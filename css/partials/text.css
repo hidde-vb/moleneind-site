@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Alata|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: $dark;
+  color: var(--c-dark);
 }
 
 h1 {
   font-family: "Alata", sans-serif;
   font-size: 42px;
-  color: $dark;
+  color: var(--c-dark);
 
   &.section-header {
     margin-right: 200px;
@@ -20,17 +20,16 @@ h2 {
   font-family: "Alata", sans-serif;
   font-size: 32px;
   font-weight: 700;
-  color: $primary-dark;
+  color: var(--c-primary-dark);
 }
 
 h3 {
+  margin: 0;
   margin-left: 10px;
   font-family: "Alata", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  color: $primary-dark;
-
-  margin: 0;
+  color: var(--c-primary-dark);
   padding: 10px;
 }
 
@@ -49,7 +48,7 @@ p {
 
   &.accent {
     padding-top: 20px;
-    color: $primary-dark;
+    color: var(--c-primary-dark);
     font-style: italic;
   }
 }
@@ -60,33 +59,33 @@ p {
 }
 
 a {
-  color: $primary-dark;
+  color: var(--c-primary-dark);
   font-weight: 700;
   text-decoration: none;
   transition: color 0.1s;
 
   &:hover {
-    color: $primary-light;
+    color: var(--c-primary-light);
   }
 }
 
 .no-effect {
   font-family: "Open Sans", sans-serif;
-  color: $dark;
+  color: var(--c-dark);
   font-weight: 500;
 
   &:hover {
-    color: $dark;
+    color: var(--c-dark);
   }
 }
 
 .facebook {
   padding: 10px;
-  color: $facebook-light;
+  color: var(--c-facebook-light);
 
   &:hover {
-    color: $facebook;
-    border-color: $facebook;
+    color: var(--c-facebook);
+    border-color: var(--c-facebook);
   }
 
   & img {

@@ -1,5 +1,3 @@
-// Fixed top header
-
 header {
   z-index: 10;
   overflow: hidden;
@@ -7,17 +5,25 @@ header {
   top: 0;
   width: 100%;
   padding: 20px;
-  max-width: $break-big;
+  max-width: var(--break-big);
 
-  background: linear-gradient(bottom, rgba(255, 255, 255, 0.001) 0%, rgba(247, 242, 242, 1) 80%);
-  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.001) 0%, rgba(247, 242, 242, 1) 80%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.001) 0%,
+    rgba(247, 242, 242, 1) 80%
+  );
+  background: -webkit-linear-gradient(
+    bottom,
+    rgba(255, 255, 255, 0.001) 0%,
+    rgba(247, 242, 242, 1) 80%
+  );
 
   .header-icon {
     margin: 20px;
     height: 80px;
-    transition: .2s;
+    transition: 0.2s;
 
-    @media screen and (max-width: $break-mobile) {
+    @media screen and (max-width: var(--break-mobile)) {
       height: 50px;
     }
   }
@@ -33,7 +39,7 @@ nav {
     padding: 0;
   }
 
-  li.menu-item {
+  .menu-item {
     float: left;
 
     a {
@@ -42,7 +48,7 @@ nav {
       text-align: center;
       font-size: 16px;
       font-weight: bold;
-      color: $dark;
+      color: var(--c-dark);
       text-decoration: none;
 
       &.menu-item-symbol {
@@ -50,27 +56,22 @@ nav {
       }
 
       &.active {
-        color: $primary;
+        color: var(--c-primary);
       }
     }
 
     &:hover a {
-      color: $primary;
+      color: var(--c-primary);
     }
-
-  }
-
-  @media screen and (max-width: $break-small) {
-    display: none;
   }
 }
 
-@media screen and (max-width: $break-small) {
-  nav.vertical {
+@media (max-width: var(--break-small)) {
+  .vertical {
     margin: 0;
     display: block;
     align-content: center;
-    background: $light;
+    background: var(--c-light);
     width: 100%;
 
     li.menu-item {
@@ -83,6 +84,10 @@ nav {
       }
     }
   }
+
+  .navigation {
+    display: none;
+  }
 }
 
 .hamburger {
@@ -93,8 +98,8 @@ nav {
   .hamburger-line {
     width: 35px;
     height: 4px;
-    background-color: $dark;
-    transition: .2s;
+    background-color: var(--c-dark);
+    transition: 0.2s;
     margin: 7px 0;
   }
 
@@ -115,10 +120,10 @@ nav {
   }
 
   &:hover .hamburger-line {
-    background-color: $primary-dark;
+    background-color: var(--c-primary-dark);
   }
 
-  @media screen and (min-width: $break-small) {
+  @media screen and (min-width: var(--break-small)) {
     display: none;
   }
 }

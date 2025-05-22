@@ -1,8 +1,7 @@
 # ignored build files
 node_modules/
 package-lock.json
-css/
-dist/css
+style.sss
 
 .vs-code/
 .idea

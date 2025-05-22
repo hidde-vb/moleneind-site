@@ -1,0 +1,9 @@
+@import url("partials/base.css");
+
+@import url("partials/body.css");
+@import url("partials/contact.css");
+@import url("partials/header");
+@import url("partials/footer");
+@import url("partials/jumbotron");
+@import url("partials/contact");
+@import url("partials/text");

@@ -10,7 +10,7 @@
     "postcss-nesting": "^13.0.1"
   },
   "scripts": {
-    "postcss": "node postcss"
+    "postcss": "node ./src/postcss"
   },
   "author": "Hidde van Bavel",
   "license": "ISC"

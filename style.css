@@ -9,16 +9,12 @@
 
   --c-facebook: #3b5998;
   --c-facebook-light: #1778f2;
-
-  --break-big: 1200px;
-  --break-small: 1050px;
-  --break-mobile: 600px;
 }* {
   box-sizing: border-box;
 }.hide {
   opacity: 0;
 }body {
-  max-width: var(--break-big);
+  max-width: 1200px;
   background-color: var(--c-light);
   margin: auto;
   padding: 0;
@@ -167,7 +163,7 @@
   top: 0;
   width: 100%;
   padding: 20px;
-  max-width: var(--break-big);
+  max-width: 1200px;
 
   background: linear-gradient(
     to bottom,
@@ -183,7 +179,7 @@
     margin: 20px;
     height: 80px;
     transition: 0.2s;
-  }@media screen and (max-width: var(--break-mobile)) {header .header-icon {
+  }@media screen and (max-width: 600px) {header .header-icon {
       height: 50px;
   }
     }nav {
@@ -209,7 +205,10 @@
         color: var(--c-primary);
       }:is(nav .menu-item):hover a {
       color: var(--c-primary);
-    }@media screen and (max-width: var(--break-small)) {
+    }@media (max-width: 1050px) {nav {
+    display: none;
+}
+  }@media (max-width: 1050px) {
   .vertical {
     margin: 0;
     display: block;
@@ -227,10 +226,6 @@
         font-size: 18px;
         margin-top: 10px;
       }
-
-  nav {
-    display: none;
-  }
 }.hamburger {
   width: 45px;
   float: right;
@@ -251,7 +246,7 @@
       transform: rotate(-45deg) translate(3px, -12px);
     }.hamburger:hover .hamburger-line {
     background-color: var(--c-primary-dark);
-  }@media screen and (min-width: var(--break-small)) {.hamburger {
+  }@media screen and (min-width: 1050px) {.hamburger {
     display: none;
 }
   }footer {

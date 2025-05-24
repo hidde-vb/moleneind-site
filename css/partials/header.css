@@ -5,7 +5,7 @@ header {
   top: 0;
   width: 100%;
   padding: 20px;
-  max-width: var(--break-big);
+  max-width: 1200px;
 
   background: linear-gradient(
     to bottom,
@@ -23,7 +23,7 @@ header {
     height: 80px;
     transition: 0.2s;
 
-    @media screen and (max-width: var(--break-mobile)) {
+    @media screen and (max-width: 600px) {
       height: 50px;
     }
   }
@@ -64,9 +64,13 @@ nav {
       color: var(--c-primary);
     }
   }
+
+  @media (max-width: 1050px) {
+    display: none;
+  }
 }
 
-@media (max-width: var(--break-small)) {
+@media (max-width: 1050px) {
   .vertical {
     margin: 0;
     display: block;
@@ -83,10 +87,6 @@ nav {
         margin-top: 10px;
       }
     }
-  }
-
-  .navigation {
-    display: none;
   }
 }
 
@@ -123,7 +123,7 @@ nav {
     background-color: var(--c-primary-dark);
   }
 
-  @media screen and (min-width: var(--break-small)) {
+  @media screen and (min-width: 1050px) {
     display: none;
   }
 }

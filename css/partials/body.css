@@ -1,5 +1,5 @@
 body {
-  max-width: var(--break-big);
+  max-width: 1200px;
   background-color: var(--c-light);
   margin: auto;
   padding: 0;

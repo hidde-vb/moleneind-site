@@ -2,14 +2,13 @@
 
 Static site for Stal Moleneind.
 
-Depends only on `PostCSS` to tranform future-standards-compliant CSS into styling with wider support
+### Serve local
+
+ 1. use the `n watch` command to automatically create a build after making changes
+ 2. open a seperate terminal in the created `/dist` folder
+ 3. serve a local server, using for example `npx http-server`
 
 ### TODO
  - [ ] Update images
  - [ ] Update text
- - [x] modernize css toolchain with plain, future-standards-compliant CSS
-    - postcss with a basic script https://github.com/postcss/postcss?tab=readme-ov-file#npm-scripts
- - [x] get rid of gulp 
- - [x] move js out of dist and ignore dist completely
- - [ ] fix media queries
- - [ ] modernize css
+ - [ ] fix `vite dev` this does not work -> css and js does not get loaded properly

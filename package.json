@@ -3,14 +3,18 @@
   "version": "1.1.0",
   "description": "",
   "main": "gulpfile.js",
+  "type": "module",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
     "postcss-import": "^16.1.0",
-    "postcss-nesting": "^13.0.1"
+    "postcss-nesting": "^13.0.1",
+    "vite": "^6.3.5"
   },
   "scripts": {
-    "postcss": "node ./src/postcss"
+    "serve": "vite dev",
+    "build": "vite build",
+    "watch": "vite build --watch"
   },
   "author": "Hidde van Bavel",
   "license": "ISC"

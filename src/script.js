@@ -1,3 +1,5 @@
+import './css/main.css';
+
 /* Hamburger Menu */
 
 const hamburger = document.getElementById('hamburger');

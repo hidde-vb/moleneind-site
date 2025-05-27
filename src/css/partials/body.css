@@ -43,11 +43,11 @@ section {
 .banner-image {
   border-top: var(--c-primary) solid 3px;
   width: 100%;
+}
 
-  &-rounded {
-    border: none;
-    border-radius: 5px;
-  }
+.banner-image-rounded {
+  border: none;
+  border-radius: 5px;
 }
 
 /* Positioning */

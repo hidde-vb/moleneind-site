@@ -62,10 +62,10 @@ a {
   color: var(--c-primary-dark);
   font-weight: 700;
   text-decoration: none;
-  transition: color 0.1s;
+  transition: color 0.125s;
 
   &:hover {
-    color: var(--c-primary-light);
+    color: var(--c-primary);
   }
 }
 

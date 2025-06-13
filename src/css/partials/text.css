@@ -10,27 +10,37 @@ h1 {
   font-size: 42px;
   color: var(--c-dark);
 
-  &.section-header {
-    margin-right: 200px;
+  @media screen and (max-width: 600px) {
+    font-size: 32px;
   }
 }
 
+.section-title {
+  margin-bottom: 0;
+}
+
 h2 {
-  margin-left: 10px;
   font-family: "Alata", sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: var(--c-primary-dark);
+
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+  }
+}
+
+.section-subtitle {
+  margin-top: 0;
 }
 
 h3 {
   margin: 0;
-  margin-left: 10px;
   font-family: "Alata", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--c-primary-dark);
-  padding: 10px;
+  margin-bottom: 16px;
 }
 
 p {
@@ -40,7 +50,7 @@ p {
   max-width: 800px;
 
   margin: 0px;
-  padding: 10px 0;
+  margin-bottom: 16px;
 
   &.sticky {
     padding-top: 0;
@@ -82,10 +92,11 @@ a {
 .facebook {
   padding: 10px;
   color: var(--c-facebook-light);
+  transition: filter 0.125s;
 
   &:hover {
     color: var(--c-facebook);
-    border-color: var(--c-facebook);
+    filter: brightness(0.8);
   }
 
   & img {

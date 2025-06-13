@@ -1,5 +1,5 @@
 .contact-form {
-  padding: 10px;
+  padding: 16px;
 
   input[type="text"],
   input[type="email"],
@@ -7,45 +7,41 @@
     width: 100%;
 
     font-size: 14px;
-    margin: 5px 0;
-    padding: 10px;
+    margin: 8px 0;
+    padding: 12px;
     background: var(--c-white);
 
-    border-radius: 5px;
-    border: var(--c-secondary) 2px solid;
-
+    border-radius: 8px;
+    border: var(--c-secondary) 3px solid;
     &:focus {
-      border-color: var(--c-primary);
-    }
-  }
-
-  input[type="submit"] {
-    width: 100%;
-    font-size: 14px;
-    margin: 10px 0;
-    padding: 10px;
-
-    background: var(--c-secondary);
-    border-radius: 5px;
-    border: var(--c-secondary) 2px solid;
-
-    transition-duration: 0.2s;
-
-    -webkit-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.2);
-
-    &:hover {
-      transform: scale(1.02);
-      -webkit-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4);
-      -moz-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4);
-      box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4);
+      outline: var(--c-dark) 3px solid
     }
   }
 }
 
+button,
+  input[type="submit"] {
+    width: 100%;
+    font-size: 16px;
+    margin: 8px 0;
+    padding: 12px;
+    font-weight: bold;
+
+    background: var(--c-secondary);
+    border-radius: 8px;
+    border: var(--c-secondary) 3px solid;
+
+    transition-duration: 0.125s;
+
+    &:hover {
+      border-color: var(--c-dark);
+      cursor: pointer;
+    }
+  }
+
 textarea {
   resize: vertical;
+  min-height: 144px;
 }
 
 #snackbar {

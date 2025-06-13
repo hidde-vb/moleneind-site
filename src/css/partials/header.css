@@ -1,6 +1,5 @@
 header {
   z-index: 10;
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -53,6 +52,11 @@ nav {
 
       &.menu-item-symbol {
         padding: 15px;
+        transition: filter 0.125s;
+      }
+
+      &.menu-item-symbol:hover {
+        filter: brightness(0.8);
       }
 
       &.active {
@@ -72,19 +76,23 @@ nav {
 
 @media (max-width: 1050px) {
   .vertical {
+    position: absolute;
+    top: 96px;;
+    left: 0;
+    width: 100vw; /* Full viewport width */
     margin: 0;
     display: block;
     align-content: center;
     background: var(--c-light);
-    width: 100%;
+    z-index: 11;
 
     li.menu-item {
       float: none;
       width: 100%;
 
       a {
-        font-size: 18px;
-        margin-top: 10px;
+        font-size: 20px;
+        margin-top: 16px;
       }
     }
   }

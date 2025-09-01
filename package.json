@@ -4,6 +4,11 @@
   "description": "",
   "main": "gulpfile.js",
   "type": "module",
+  "author": "Hidde van Bavel",
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
@@ -15,7 +20,5 @@
     "serve": "vite dev",
     "build": "vite build",
     "watch": "vite build --watch"
-  },
-  "author": "Hidde van Bavel",
-  "license": "ISC"
+  }
 }

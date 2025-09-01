@@ -100,6 +100,17 @@ section {
     background-image: url("../../img/foto/home-intro.webp");
     background-size: cover;
     border-radius: 12px;
+    width: 100%;
+    min-width: 0;
+
+    .fb-page,
+    .fb-page > span,
+    .fb-page iframe {
+      width: 100% !important;
+      min-width: 0 !important;
+      box-sizing: border-box;
+      display: block;
+    }
   }
 
   &.box-center {

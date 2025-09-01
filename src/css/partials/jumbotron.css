@@ -1,5 +1,4 @@
 .jumbotron {
-  margin: 0 16px;
   padding-top: 44%;
   min-height: 500px;
 
@@ -16,7 +15,6 @@
   border-bottom-right-radius: 24px;
   padding: 32px;
   padding-top: 8px;
-  margin-left: 16px;
   max-width: 80%;
   position: relative;
   top: -128px;

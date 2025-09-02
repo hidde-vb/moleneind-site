@@ -40,6 +40,8 @@ const handleSubmit = async (event) => {
       name: document.querySelector("#user_name").value,
       message: document.querySelector("#message").value,
       email: document.querySelector("#user_mail").value,
+      phone: document.querySelector("#user_phone").value,
+      address: document.querySelector("#user_address").value,
     });
 
     document.querySelector("#contact-form").classList.add("hidden");

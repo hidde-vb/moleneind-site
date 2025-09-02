@@ -13,8 +13,10 @@
 
     border-radius: 8px;
     border: var(--c-secondary) 3px solid;
+    transition-duration: 0.125s;
+
     &:focus {
-      outline: var(--c-dark) 3px solid
+      outline: var(--c-primary-dark) 3px solid
     }
   }
 }
@@ -30,11 +32,10 @@ button,
     background: var(--c-secondary);
     border-radius: 8px;
     border: var(--c-secondary) 3px solid;
-
     transition-duration: 0.125s;
 
     &:hover {
-      border-color: var(--c-dark);
+      outline: var(--c-primary-dark) 3px solid;
       cursor: pointer;
     }
   }

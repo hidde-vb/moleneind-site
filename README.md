@@ -12,6 +12,3 @@ This project uses vite, so `npm i` and `npm run serve` does the trick!
  2. open a seperate terminal in the created `/dist` folder
  3. serve a local server, using for example `npx http-server`
 
-### TODO
- - [ ] Update images
- - [ ] Update text
